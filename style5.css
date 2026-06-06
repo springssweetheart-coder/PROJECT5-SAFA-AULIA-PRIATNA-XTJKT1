@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    background-image: url("background5.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.button{
+  width: 120px;
+  position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.cake {
+    position: absolute;
+
+    left: 45%;
+    top: 58%;
+
+    transform: translate(-50%, -50%);
+    width: 620px;
+}
+.play-btn{
+    position: absolute;
+
+    /* Sesuaikan posisi */
+    left: 56%;
+    top: 50%;
+
+    width: 100px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse{
+    0%, 100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+}

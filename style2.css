@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    background-image: url("background2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.button{
+  width: 120px;
+  position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+top: 310px;
+}
+
+.btn-img {
+    width: 380px;
+    cursor: pointer;
+    animation: dance 2s ease-in-out infinite;
+}
+@keyframes dance {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-8deg);
+    }
+    75% {
+        transform: rotate(8deg);
+    }
+}
+@keyframes dance {
+    0%, 100% {
+        transform: rotate(0deg) translateY(0);
+    }
+    25% {
+        transform: rotate(-8deg) translateY(-5px);
+    }
+    75% {
+        transform: rotate(8deg) translateY(-5px);
+    }
+}

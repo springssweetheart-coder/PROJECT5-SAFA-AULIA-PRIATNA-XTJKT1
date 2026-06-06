@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    background-image: url("background4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.button{
+  width: 120px;
+  position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.video-left{
+    position: absolute;
+    top: 140px;
+    left: 170px;
+}
+
+.video-right{
+    position: absolute;
+    top: 265px;
+    left: 880px;
+}
+
+.video-left video,
+.video-right video{
+    width: 500px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 5px solid white;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Abieell!</title>
+
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+    <a href="page2.html">
+    <img src="button.png" alt="Next" class="button">
+</a>
+<audio id="musik">
+    <source src="birthday.mp3" type="audio/mpeg">
+</audio>
+<img src="cake.gif" class="cake">
+<img src="play.png" width="100" onclick="putarMusik()" class="play-btn">
+<script>
+function putarMusik() {
+    var audio = document.getElementById("musik");
+
+    if (audio.paused) {
+        audio.play();
+    } else {
+        audio.pause();
+    }
+}
+const starsContainer = document.querySelector('.stars');
+
+for(let i = 0; i < 40; i++){
+    const star = document.createElement('div');
+    star.classList.add('star');
+
+    star.style.left = Math.random() * 100 + '%';
+    star.style.top = Math.random() * 100 + '%';
+
+    star.style.animationDelay = Math.random() * 3 + 's';
+
+    const size = Math.random() * 4 + 2;
+    star.style.width = size + 'px';
+    star.style.height = size + 'px';
+
+    starsContainer.appendChild(star);
+}
+</script>
+</body>
+</html>
